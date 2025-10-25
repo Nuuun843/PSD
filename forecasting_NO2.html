@@ -593,11 +593,11 @@ Variabel utama yang diambil dari Sentinel‑5P adalah konsentrasi Nitrogen Dioks
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>           t           x         y  crs  NO2
-0 2022-10-21  112.619022 -7.210068  b&#39;&#39;  NaN
-1 2022-10-21  112.619022 -7.244790  b&#39;&#39;  NaN
-2 2022-10-21  112.619022 -7.279512  b&#39;&#39;  NaN
-3 2022-10-21  112.619022 -7.314234  b&#39;&#39;  NaN
-4 2022-10-21  112.619022 -7.348957  b&#39;&#39;  NaN
+0 2022-10-26  111.002735 -6.661937  b&#39;&#39;  NaN
+1 2022-10-26  111.002735 -6.696660  b&#39;&#39;  NaN
+2 2022-10-26  111.002735 -6.731382  b&#39;&#39;  NaN
+3 2022-10-26  111.002735 -6.766104  b&#39;&#39;  NaN
+4 2022-10-26  111.002735 -6.800826  b&#39;&#39;  NaN
 </pre></div>
 </div>
 </div>
@@ -610,17 +610,17 @@ Variabel utama yang diambil dari Sentinel‑5P adalah konsentrasi Nitrogen Dioks
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
-RangeIndex: 26875 entries, 0 to 26874
+RangeIndex: 16125 entries, 0 to 16124
 Data columns (total 5 columns):
  #   Column  Non-Null Count  Dtype         
 ---  ------  --------------  -----         
- 0   t       26875 non-null  datetime64[ns]
- 1   x       26875 non-null  float64       
- 2   y       26875 non-null  float64       
- 3   crs     26875 non-null  object        
- 4   NO2     14373 non-null  float32       
+ 0   t       16125 non-null  datetime64[ns]
+ 1   x       16125 non-null  float64       
+ 2   y       16125 non-null  float64       
+ 3   crs     16125 non-null  object        
+ 4   NO2     7243 non-null   float32       
 dtypes: datetime64[ns](1), float32(1), float64(2), object(1)
-memory usage: 945.0+ KB
+memory usage: 567.0+ KB
 None
 </pre></div>
 </div>
@@ -648,9 +648,9 @@ None
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>FrozenMappingWarningOnValuesAccess({&#39;t&#39;: 1075, &#39;x&#39;: 5, &#39;y&#39;: 5})
 Coordinates:
-  * t        (t) datetime64[ns] 9kB 2022-10-21 2022-10-22 ... 2025-10-05
-  * x        (x) float64 40B 112.6 112.7 112.7 112.8 112.8
-  * y        (y) float64 40B -7.21 -7.245 -7.28 -7.314 -7.349
+  * t        (t) datetime64[ns] 9kB 2022-10-26 2022-10-27 ... 2025-10-10
+  * x        (x) float64 24B 111.0 111.1 111.1
+  * y        (y) float64 40B -6.662 -6.697 -6.731 -6.766 -6.801
 </pre></div>
 </div>
 </div>
@@ -662,14 +662,14 @@ Coordinates:
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>count    14373.000000
-mean         0.000045
-std          0.000034
-min         -0.000031
-25%          0.000025
-50%          0.000037
-75%          0.000055
-max          0.000448
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>count     7243.000000
+mean        0.000028
+std         0.000012
+min        -0.000021
+25%         0.000020
+50%         0.000028
+75%         0.000036
+max         0.000260
 Name: NO2, dtype: float64
 </pre></div>
 </div>
@@ -695,7 +695,7 @@ Name: NO2, dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/d85f94d0611b38904e2dacdf99d58575e9f5561a492a76530694f212e7d3c54c.png" src="_images/d85f94d0611b38904e2dacdf99d58575e9f5561a492a76530694f212e7d3c54c.png" />
+<img alt="_images/NO2pati.png" src="_images/NO2pati.png" />
 </div>
 </div>
 </section>
@@ -710,19 +710,20 @@ Name: NO2, dtype: float64
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>t          0
-x          0
-y          0
-crs        0
-NO2    12502
+x         0
+y         0
+crs       0
+NO2    8882
 dtype: int64
+0.5508217054263566
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>np.float64(0.4651906976744186)
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>np.float64(0.5508217054263566)
 </pre></div>
 </div>
 </div>
 </div>
-<p>Terdapat Missing value pada kolom NO2 sebanyak 12.502, 46% dari data keseluruhan.</p>
+<p>Terdapat Missing value pada kolom NO2 sebanyak 8882, 36% dari data keseluruhan.</p>
 </section>
 </section>
 <section id="preprocessing-data">
@@ -747,12 +748,12 @@ dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>25
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>19
 </pre></div>
 </div>
 </div>
 </div>
-<p>setelah interpolasi masih tersisa 25 NaN, biasanya ada dua penyebab utama:</p>
+<p>setelah interpolasi masih tersisa 19 NaN, biasanya ada dua penyebab utama:</p>
 <ul class="simple">
 <li><p>NaN di ujung awal/akhir time series, interpolasi tidak bisa mengisi karena tidak ada data sebelum/ sesudahnya.</p></li>
 <li><p>Ada gap terlalu panjang</p></li>
@@ -794,17 +795,17 @@ dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>           t           x         y  crs       NO2  NO2_lag1  NO2_lag7
-0 2022-10-21  112.619022 -7.210068  b&#39;&#39;  0.000212       NaN       NaN
-1 2022-10-21  112.619022 -7.244790  b&#39;&#39;  0.000212  0.000212       NaN
-2 2022-10-21  112.619022 -7.279512  b&#39;&#39;  0.000212  0.000212       NaN
-3 2022-10-21  112.619022 -7.314234  b&#39;&#39;  0.000212  0.000212       NaN
-4 2022-10-21  112.619022 -7.348957  b&#39;&#39;  0.000212  0.000212       NaN
+0 2022-10-21  112.619022 -7.210068  b''  0.000212       NaN       NaN
+1 2022-10-21  112.619022 -7.244790  b''  0.000212  0.000212       NaN
+2 2022-10-21  112.619022 -7.279512  b''  0.000212  0.000212       NaN
+3 2022-10-21  112.619022 -7.314234  b''  0.000212  0.000212       NaN
+4 2022-10-21  112.619022 -7.348957  b''  0.000212  0.000212       NaN
            t           x         y  crs       NO2  NO2_lag1  NO2_lag7
-0 2022-10-21  112.673585 -7.279512  b&#39;&#39;  0.000212  0.000212  0.000212
-1 2022-10-21  112.673585 -7.314234  b&#39;&#39;  0.000212  0.000212  0.000212
-2 2022-10-21  112.673585 -7.348957  b&#39;&#39;  0.000212  0.000212  0.000212
-3 2022-10-21  112.728149 -7.210068  b&#39;&#39;  0.000212  0.000212  0.000212
-4 2022-10-21  112.728149 -7.244790  b&#39;&#39;  0.000212  0.000212  0.000212
+0 2022-10-21  112.673585 -7.279512  b''  0.000212  0.000212  0.000212
+1 2022-10-21  112.673585 -7.314234  b''  0.000212  0.000212  0.000212
+2 2022-10-21  112.673585 -7.348957  b''  0.000212  0.000212  0.000212
+3 2022-10-21  112.728149 -7.210068  b''  0.000212  0.000212  0.000212
+4 2022-10-21  112.728149 -7.244790  b''  0.000212  0.000212  0.000212
 </pre></div>
 </div>
 </div>
@@ -866,8 +867,8 @@ dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>MAE: 1.166841950539323e-05
-RMSE: 2.0644633525746885e-05
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>MAE:5.14566292544302e-06
+RMSE: 7.738531157508259e-06
 </pre></div>
 </div>
 </div>
@@ -894,7 +895,7 @@ RMSE: 2.0644633525746885e-05
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/66694ab7f1adf945d7f3eb4a141e442ea0b9d1d80b23c3424f01cbb0c96ed779.png" src="_images/66694ab7f1adf945d7f3eb4a141e442ea0b9d1d80b23c3424f01cbb0c96ed779.png" />
+<img alt="_images/NO2knn.png" src="_images/NO2knn.png" />
 </div>
 </div>
 </section>
@@ -980,10 +981,10 @@ RMSE: 2.0644633525746885e-05
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Fitur [&#39;NO2_lag1&#39;, &#39;NO2_lag7&#39;] -&gt; MAE: 0.000012, RMSE: 0.000021
-Fitur [&#39;NO2_lag1&#39;, &#39;NO2_lag7&#39;, &#39;NO2_lag14&#39;] -&gt; MAE: 0.000011, RMSE: 0.000020
-Fitur [&#39;NO2_lag1&#39;, &#39;NO2_lag7&#39;, &#39;NO2_lag14&#39;, &#39;NO2_lag30&#39;] -&gt; MAE: 0.000011, RMSE: 0.000020
-Fitur [&#39;NO2_lag1&#39;, &#39;NO2_lag2&#39;, &#39;NO2_lag3&#39;, &#39;NO2_lag7&#39;, &#39;NO2_lag14&#39;] -&gt; MAE: 0.000011, RMSE: 0.000020
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Fitur [&#39;NO2_lag1&#39;, &#39;NO2_lag7&#39;] -&gt; MAE: 0.000005, RMSE: 0.000008
+Fitur [&#39;NO2_lag1&#39;, &#39;NO2_lag7&#39;, &#39;NO2_lag14&#39;] -&gt;MAE: 0.000005, RMSE: 0.000007
+Fitur [&#39;NO2_lag1&#39;, &#39;NO2_lag7&#39;, &#39;NO2_lag14&#39;, &#39;NO2_lag30&#39;] -&gt; MAE: 0.000005, RMSE: 0.000008
+Fitur [&#39;NO2_lag1&#39;, &#39;NO2_lag2&#39;, &#39;NO2_lag3&#39;, &#39;NO2_lag7&#39;, &#39;NO2_lag14&#39;] -&gt; MAE: 0.000005, RMSE: 0.000008
 </pre></div>
 </div>
 </div>
